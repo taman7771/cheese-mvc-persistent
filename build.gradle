@@ -1,6 +1,6 @@
 buildscript {
 	ext {
-		springBootVersion = '2.0.2.RELEASE'
+		springBootVersion = '1.5.2.RELEASE'
 	}
 	repositories {
 		mavenCentral()
@@ -37,5 +37,6 @@ dependencies {
 }
 
 bootRun    {
-    sourceResources sourceSets.main
+    //sourceResources sourceSets.main
+	addResources = true
 }

@@ -39,7 +39,7 @@ private CategoryDao categoryDao;
     }
 
     @RequestMapping(value = "add", method = RequestMethod.POST)
-    public String processAddCheeseForm(@ModelAttribute @Valid Category newCategory,
+    public String processAddCategoryForm(@ModelAttribute @Valid Category newCategory,
                                        Errors errors, Model model) {
 
         if (errors.hasErrors()) {

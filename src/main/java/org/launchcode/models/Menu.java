@@ -9,17 +9,16 @@ import java.util.List;
 @Entity
 public class Menu {
 
-@Id
-@GeneratedValue
-private int id;
+    @Id
+    @GeneratedValue
+    private int id;
 
-@NotNull
-@Size(min=3, max=15)
-private String name;
+    @NotNull
+    @Size(min=3, max=15)
+    private String name;
 
-@ManyToMany
-private List<Cheese> cheeses;
-
+    @ManyToMany
+    private List<Cheese> cheeses;
 
     public Menu() {
     }
